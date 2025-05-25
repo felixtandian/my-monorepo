@@ -1,8 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
-import { db } from '../firebase/firebaseConfig';
-import { collection, query, where, getDocs } from 'firebase/firestore';
-
 const baseUrl = process.env.NEXT_APP_API_URL || 'http://localhost:8000/api/';
 
 export async function getUsers(userid: string) {
